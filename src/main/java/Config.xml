@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>  
+    <typeAliases>
+        <typeAlias type="com.dto.MemberVO" alias="Member"/>
+      	<typeAlias type="com.dto.CourseVO" alias="Course"/>
+		<typeAlias type="com.dto.FollowVO" alias="Follow"/>
+		<typeAlias type="com.dto.SNSVO" alias="SNS"/>
+		<typeAlias type="com.dto.TagVO" alias="tag"/>
+		<typeAlias type="com.dto.TextVO" alias="text"/>
+		<typeAlias type="com.dto.PhotoVO" alias="photo"/>
+		<typeAlias type="com.dto.ReplyVO" alias="Reply"/>
+		<typeAlias type="com.dto.BookingVO" alias="Booking"/>
+		<typeAlias type="com.dto.ThemeCountVO" alias="Theme"/>
+    </typeAliases>
+	<environments default="development">    
+		<environment id="development">      
+		<transactionManager type="JDBC"/>      
+		<dataSource type="POOLED">      
+			<property name="driver" value="com.mysql.jdbc.Driver"/>        
+			<property name="url" value="jdbc:mysql://211.238.142.35:3306/project"/>        
+			<property name="username" value="root"/>        
+			<property name="password" value="1234"/>      
+		</dataSource>    
+		</environment>  
+	</environments>  
+	<mappers>  
+	    <mapper resource="com/dao/mapper.xml"/>  
+	    <!-- include -->
+	</mappers> 
+</configuration>
+
+

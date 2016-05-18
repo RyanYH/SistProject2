@@ -1,0 +1,44 @@
+
+#menubar
+{ width: 100%;
+  height: 71px;
+  padding: 0px 0 0 0px;
+  background: #555 url(menu.png) repeat-x;
+  } 
+
+ul#menu
+{ float: right;
+  margin: 0; 
+  padding: 0;}
+
+ul#menu li
+{ float: left;
+  margin: 0px 0 0 0;
+  padding: 0px 0 0 0px;
+  list-style: none;}
+
+ul#menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% 'trebuchet ms', arial;
+  display: block; 
+  float: left; 
+  height: 38px;
+  padding: 28px 22px 4px 22px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  background: transparent;} 
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color: #FFF;}
+@media(max-width: 768px){
+	li{
+		width: 150px; 
+	}
+}
+@media(max-width: 480px){
+	li{
+		width: 130px; 
+	}
+}

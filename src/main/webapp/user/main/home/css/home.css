@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+html body{height: 100%;}
+
+.container{
+	height: 33%;
+}
+
+#past{
+	height: 300px;
+}
+#this{
+	height: 450px;
+}
+#popular{
+	height: 300px;
+}
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+
+}
+/* The controlsy */
+.carousel-control {
+    height: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 120px;
+}
+.carousel-control.left {
+	left: -12px;
+	width: 40px;
+}
+.carousel-control.right {
+	right: -12px;
+	width: 40px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}

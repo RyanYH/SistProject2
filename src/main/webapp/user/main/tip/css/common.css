@@ -1,0 +1,2069 @@
+@charset "utf-8";
+
+/*@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");*/
+@font-face {
+	font-family: 'Malgun Gothic';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/MalgunGothic.eot);
+	src: local('Malgun Gothic'), local('Malgun Gothic'),
+		url(../fonts/MalgunGothic.eot?#iefix) format('embedded-opentype'),
+		/*url(../fonts/MalgunGothic.woff) format('woff'),*/
+       url(../fonts/MalgunGothic.TTF) format('truetype');
+}
+
+html, body, div, ul, li, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0pt;
+	word-spacing: 0pt;
+	background-color: #ffffff;
+}
+
+ul, ol, dl, dt, dd {
+	list-style: none
+}
+
+img {
+	border-style: none;
+	letter-spacing: none;
+	word-spacing: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	vertical-align: middle;
+	line-height: 0px;
+}
+
+input:focus {
+	outline: none;
+}
+
+input, textarea, select {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+#Wrap {
+	width: 100%;
+}
+
+.Mpage {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+	overflow: hidden;
+	min-width: 1024px;
+}
+
+.Mpage .BackGrImg01 {
+	width: 100%;
+}
+
+.MpInfoArea {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 1024px;
+	height: 100%;
+	margin-left: -512px;
+}
+
+.MpInfoArea .Mlogo {
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	width: 126px;
+	height: 43px;
+	margin-left: -63px;
+	cursor: pointer;
+}
+
+.MpInfoArea .M_tit001 {
+	position: absolute;
+	top: 30.5%;
+	left: 50%;
+	width: 482px;
+	height: 190px;
+	margin-left: -241px;
+}
+
+.MpInfoArea .MmenuArea {
+	position: absolute;
+	top: 68.4%;
+	left: 0px;
+	width: 100%;
+}
+
+.MpInfoArea .MmenuArea .Mmenu01 {
+	position: absolute;
+	top: 0px;
+	left: 36px;
+	cursor: pointer;
+}
+
+.MpInfoArea .MmenuArea .Mmenu02 {
+	position: absolute;
+	top: 0px;
+	left: 421px;
+	cursor: pointer;
+}
+
+.MpInfoArea .MmenuArea .Mmenu03 {
+	position: absolute;
+	top: 0px;
+	left: 760px;
+	cursor: pointer;
+}
+
+.MpInfoArea .MmenuArea .Mmenu01on {
+	position: absolute;
+	top: -73px;
+	left: -1px;
+	cursor: pointer;
+}
+
+.MpInfoArea .MmenuArea .Mmenu02on {
+	position: absolute;
+	top: -73px;
+	left: 351px;
+	cursor: pointer;
+}
+
+.MpInfoArea .MmenuArea .Mmenu03on {
+	position: absolute;
+	top: -73px;
+	left: 727px;
+	cursor: pointer;
+}
+
+.MpInfoArea .Mnext {
+	position: absolute;
+	bottom: 2.1%;
+	left: 50%;
+	width: 91px;
+	height: 100px;
+	margin-left: -45px;
+	cursor: pointer;
+}
+
+.Mpage .BacKimg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/bg_pop.png);
+}
+
+.Mpage .BacKimg .MpInfoArea {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 1024px;
+	height: 100%;
+	margin-left: -512px;
+}
+
+.Mpage .BacKimg .MpInfoArea  .MmenuArea {
+	position: absolute;
+	top: 68.4%;
+	left: 0px;
+	width: 100%;
+}
+
+.Mpage .BacKimg .MpInfoArea  .MmenuArea .Mmenu01on {
+	position: absolute;
+	top: -73px;
+	left: -1px;
+	cursor: pointer;
+}
+
+.Mpage .BacKimg .MpInfoArea  .MmenuArea .Mmenu02on {
+	position: absolute;
+	top: -74px;
+	left: 348px;
+	cursor: pointer;
+}
+
+.Mpage .BacKimg .MpInfoArea  .MmenuArea .Mmenu03on {
+	position: absolute;
+	top: -74px;
+	left: 717px;
+	cursor: pointer;
+}
+
+.Mpage .BacKimg .AniClose {
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	cursor: pointer;
+}
+
+.Sb01Page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 920px;
+	overflow: hidden;
+	min-width: 1220px;
+}
+
+.Sb01Page .BackGrImg02 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.Sub01PArea {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 1220px;
+	height: 100%;
+	margin-left: -610px;
+}
+
+.Sb_meneBox {
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	width: 1000px;
+	height: auto;
+	margin-left: -500px;
+}
+
+.Sb_meneBox .sMlogo {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 126px;
+	height: 43px;
+	margin-left: -63px;
+	cursor: pointer;
+}
+
+.Sb_meneBox .Smenu01 {
+	position: absolute;
+	top: 50px;
+	left: 24px;
+	cursor: pointer;
+}
+
+.Sb_meneBox .Smenu02 {
+	position: absolute;
+	top: 50px;
+	left: 436px;
+	cursor: pointer;
+}
+
+.Sb_meneBox .Smenu03 {
+	position: absolute;
+	top: 50px;
+	left: 831px;
+	cursor: pointer;
+}
+
+.Sub01PArea .Arr_left {
+	position: absolute;
+	top: 55%;
+	left: 0px;
+	cursor: pointer;
+}
+
+.Sub01PArea .Arr_right {
+	position: absolute;
+	top: 55%;
+	right: 0px;
+	cursor: pointer;
+}
+
+.Sb02Page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 960px;
+	overflow: hidden;
+	min-width: 1220px;
+}
+
+.Sb02Page .BackGrImg02 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.Sb02Page .sb2ContArea {
+	position: absolute;
+	top: 28.8%;
+	left: 50%;
+	width: 1220px;
+	height: 640px;
+	margin-left: -610px;
+}
+
+.Sb02Page .Nextbtp {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	width: 182px;
+	height: 88px;
+	margin-left: -91px;
+	cursor: pointer;
+}
+
+.SConBoxFrom {
+	position: absolute;
+	width: 234px;
+	height: 300px;
+}
+
+.SConBoxFrom .photoimgbox {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	width: 212px;
+	height: 212px;
+	overflow: hidden;
+	background: #d1d1d1;
+}
+
+.SConBoxFrom .photoimgbox>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.SConBoxFrom .Bname {
+	position: absolute;
+	top: 238px;
+	left: 5px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #ffffff;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.SConBoxFrom .BLike {
+	position: absolute;
+	top: 238px;
+	right: 10px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.SConBoxFrom .BLike span {
+	padding: 0 6px 0 0;
+}
+
+.SConBoxFrom .InforTT {
+	position: absolute;
+	top: 261px;
+	left: 5px;
+	width: 95%;
+	height: 36px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 18px;
+	overflow: hidden;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.IfB01 {
+	top: 182px;
+	left: 0px;
+}
+
+.IfB02 {
+	top: 30px;
+	left: 245px;
+}
+
+.IfB03 {
+	top: 340px;
+	left: 245px;
+}
+
+.IfB04 {
+	top: 130px;
+	left: 488px;
+}
+
+.IfB05 {
+	top: 0px;
+	left: 732px;
+}
+
+.IfB06 {
+	top: 320px;
+	left: 732px;
+}
+
+.IfB07 {
+	top: 71px;
+	left: 976px;
+}
+
+.Sb03page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: auto;
+	min-width: 1120px;
+}
+
+.Sb03page .BackGrImg01 {
+	width: 100%;
+}
+
+.Sb03page .topBanner01 {
+	position: relative;
+	width: 100%;
+	height: 54px;
+	border-bottom: 1px solid #ebebeb;
+	background: #ffffff;
+	z-index: 100;
+}
+
+.Sb03page .topBanner01 .banTT01 {
+	position: absolute;
+	top: 11px;
+	left: 50%;
+	width: 247px;
+	height: 30px;
+	margin-left: -123px;
+	cursor: pointer;
+}
+
+.Sb03page .topBanner02 {
+	position: relative;
+	width: 100%;
+	height: 175px;
+	background: #ffffff;
+	z-index: 100;
+}
+
+.Sb03page .topBanner02 .banTT01 {
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	width: 874px;
+	height: 144px;
+	margin-left: -437px;
+}
+
+.Nextbtp1 {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.Nextbtp1>img {
+	cursor: pointer;
+}
+
+.SbContPage {
+	position: relative;
+	width: 100%;
+	min-height: 1000px;
+}
+
+.ContPagebgArea {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.ContPagebgArea .ContPagebg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.SbContPage .header {
+	position: relative;
+	width: 100%;
+	height: 115px;
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+.SbContPage .header .S3logo {
+	position: absolute;
+	top: 36px;
+	left: 40px;
+	cursor: pointer;
+}
+
+.SbContPage .header .BtLBt01 {
+	position: absolute;
+	top: 48px;
+	right: 430px;
+	cursor: pointer;
+}
+
+.SbContPage .header .BtLBt02 {
+	position: absolute;
+	top: 40px;
+	right: 302px;
+	cursor: pointer;
+}
+
+.SbContPage .header .BtLBt03 {
+	position: absolute;
+	top: 40px;
+	right: 166px;
+	cursor: pointer;
+}
+
+.SbContPage .header .BtLBt04 {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+}
+
+.SbContPage .sbContentArea {
+	position: relative;
+	width: 1120px;
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.SbContPage .sbContentArea>ul>li {
+	float: left;
+	padding: 20px 5px 20px 11px;
+}
+
+.SConBoxFrom2 {
+	position: relative;
+	width: 264px;
+	height: 334px;
+}
+
+.SConBoxFrom2 .icon_best {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+
+.SConBoxFrom2 .photoimgbox {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 243px;
+	height: 243px;
+	overflow: hidden;
+	background: #d1d1d1;
+	cursor: pointer;
+}
+
+.SConBoxFrom2 .photoimgbox>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.SConBoxFrom2 .photoimgbox .LikeNm {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 9px;
+	background: url(../../images/photoBB.png);
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.SConBoxFrom2 .photoimgbox .NewIcon {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 69px;
+	height: 43px;
+}
+
+.SConBoxFrom2 .Bname {
+	position: absolute;
+	top: 268px;
+	left: 5px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #ffffff;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.SConBoxFrom2 .BLike {
+	position: absolute;
+	top: 268px;
+	right: 10px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.SConBoxFrom2 .BLike span {
+	padding: 0 6px 0 0;
+}
+
+.SConBoxFrom2 .InforTT {
+	position: absolute;
+	top: 291px;
+	left: 5px;
+	width: 95%;
+	height: 36px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 18px;
+	overflow: hidden;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.Sb04Page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 900px;
+	min-width: 1200px;
+}
+
+.Sb04Page .BackGrImg04 {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.Sb04Page .sb4ContArea {
+	position: absolute;
+	top: 29.5%;
+	left: 50%;
+	width: 1200px;
+	height: 620px;
+	margin-left: -600px;
+}
+
+.Sb04Page .Nextbtp {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	width: 182px;
+	height: 88px;
+	margin-left: -91px;
+	cursor: pointer;
+}
+
+/*팝업*/
+.popFstSt {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/bg_pop.png);
+	z-index: 1000
+}
+
+.PopPSt {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.popFstStPP {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/bg_pop.png);
+	z-index: 1000
+}
+/*.PopPStPP {position:fixed;top:0px;left:0px;bottom:0px;width:100%;height:100%;overflow:auto;}*/
+.IKPCloseBt1 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.IKPCloseBt2 {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+}
+
+.IKPCloseBt3 {
+	position: absolute;
+	top: -3px;
+	right: 83px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+}
+
+.IKPCloseBt4 {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+}
+
+.IKPCloseBt5 {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 50px;
+	height: 42px;
+	cursor: pointer;
+}
+
+.Ik_popP01 {
+	position: absolute;
+	top: 270px;
+	left: 50%;
+	width: 482px;
+	height: 430px;
+	margin-left: -241px;
+}
+
+.Ik_popP01 .FaceBjoin {
+	position: absolute;
+	top: 128px;
+	left: 50px;
+	width: 340px;
+	height: 52px;
+	cursor: pointer;
+}
+
+.Ik_popP01 .NaverBjoin {
+	position: absolute;
+	top: 192px;
+	left: 50px;
+	width: 340px;
+	height: 52px;
+	cursor: pointer;
+}
+
+.Ik_popP01 .Kakaojoin {
+	position: absolute;
+	top: 256px;
+	left: 50px;
+	width: 340px;
+	height: 52px;
+	cursor: pointer;
+}
+
+.Ik_popP01 .Ik_login {
+	position: absolute;
+	top: 376px;
+	left: 269px;
+	width: 72px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.Ik_popP02 {
+	position: absolute;
+	top: 270px;
+	left: 50%;
+	width: 482px;
+	height: 430px;
+	margin-left: -241px;
+}
+
+.Ik_popP02 .FaceBjoin {
+	position: absolute;
+	top: 128px;
+	left: 50px;
+	width: 340px;
+	height: 52px;
+	cursor: pointer;
+}
+
+.Ik_popP02 .NaverBjoin {
+	position: absolute;
+	top: 192px;
+	left: 50px;
+	width: 340px;
+	height: 52px;
+	cursor: pointer;
+}
+
+.Ik_popP02 .Kakaojoin {
+	position: absolute;
+	top: 256px;
+	left: 50px;
+	width: 340px;
+	height: 52px;
+	cursor: pointer;
+}
+
+.Ik_popP02 .Ik_join {
+	position: absolute;
+	top: 376px;
+	left: 274px;
+	width: 72px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.Ik_popPM01 {
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	width: 642px;
+	height: 420px;
+	margin-left: -321px;
+}
+
+.Ik_popPM01 .IKPIdeaGo {
+	position: absolute;
+	top: 319px;
+	left: 270px;
+	width: 111px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.Ik_popP03 {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 570px;
+	height: 807px;
+	margin-left: -285px;
+}
+
+.Ik_popP03 .PhotoUpload {
+	position: absolute;
+	top: 265px;
+	left: 442px;
+	width: 94px;
+	height: 34px;
+	cursor: pointer;
+}
+
+.Ik_popP03 .PhotoUploadip {
+	position: absolute;
+	top: 265px;
+	left: 442px;
+	width: 94px;
+	height: 34px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	font-size: 50px;
+	overflow: hidden;
+}
+
+.Ik_popP03 .PhotoPosBox {
+	position: absolute;
+	width: 84px;
+	height: 84px;
+}
+
+.Ik_popP03 .PhotoPosBox .UpimgS {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 84px;
+	height: 84px;
+	background: #f1f1f1;
+	cursor: pointer;
+}
+
+.Ik_popP03 .PhotoPosBox .UpimgS img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.Ik_popP03 .PhotoPosBox .photoselectT {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+
+.Ik_popP03 .PhotoPosBox .PcancleBt {
+	position: absolute;
+	top: 6px;
+	left: 64px;
+	cursor: pointer;
+}
+
+.Ik_popP03 .phoPsi1 {
+	top: 311px;
+	left: 111px;
+}
+
+.Ik_popP03 .phoPsi2 {
+	top: 311px;
+	left: 196px;
+}
+
+.Ik_popP03 .phoPsi3 {
+	top: 311px;
+	left: 281px;
+}
+
+.Ik_popP03 .phoPsi4 {
+	top: 311px;
+	left: 366px;
+}
+
+.Ik_popP03 .phoPsi5 {
+	top: 311px;
+	left: 451px;
+}
+
+.Ik_popP03 .phoPsi6 {
+	top: 396px;
+	left: 111px;
+}
+
+.Ik_popP03 .phoPsi7 {
+	top: 396px;
+	left: 196px;
+}
+
+.Ik_popP03 .phoPsi8 {
+	top: 396px;
+	left: 281px;
+}
+
+.Ik_popP03 .phoPsi9 {
+	top: 396px;
+	left: 366px;
+}
+
+.Ik_popP03 .phoPsi10 {
+	top: 396px;
+	left: 451px;
+}
+
+.Ik_popP03 .PhoStnum {
+	position: absolute;
+	top: 506px;
+	right: 34px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.Ik_popP03 .PhoStnum span {
+	color: #ff7a09;
+}
+
+.Ik_popP03 .PhoIfTT1 {
+	position: absolute;
+	top: 534px;
+	left: 110px;
+	width: 404px;
+	height: 126px;
+	background: #ffffff;
+	border: 1px solid #bbbbbb;
+	padding: 10px 10px;
+	font-size: 12px;
+	color: #000000;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.Ik_popP03 .IKPcancle {
+	position: absolute;
+	top: 743px;
+	left: 140px;
+	width: 140px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.Ik_popP03 .IKPConfGo {
+	position: absolute;
+	top: 743px;
+	left: 290px;
+	width: 140px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.Ik_popP03 .PcateSel {
+	position: absolute;
+	top: 197px;
+	left: 111px;
+	width: 186px;
+	height: 38px;
+	background: url(../../images/ppcatebg.png);
+	line-height: 38px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #000000;
+	cursor: pointer;
+	padding: 0 0 0 10px;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.Ik_popP03 .PcateSelMenu {
+	position: absolute;
+	top: 234px;
+	left: 111px;
+	width: 194px;
+	height: auto;
+	z-index: 1000;
+	background: #ffffff;
+	border: 1px solid #222222;
+	max-height: 380px;
+	overflow: auto;
+}
+
+.Ik_popP03 .PcateSelMenu>ul>li {
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+	font-size: 13px;
+	font-weight: 600;
+	color: 000000;
+	cursor: pointer;
+}
+
+.Ik_popP03 .PcateSelMenu>ul>li:hover {
+	background: #dddddd;
+}
+
+.Ik_popP03 .PcateSelMenu>ul>li a {
+	color: 000000;
+	padding: 0 0 0 10px;
+}
+
+.Ik_popP04 {
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	width: 550px;
+	height: 740px;
+	margin-left: -275px;
+}
+
+.Ik_popP04 .PhotoUpload {
+	position: absolute;
+	top: 160px;
+	left: 421px;
+	width: 94px;
+	height: 34px;
+	cursor: pointer;
+}
+
+.Ik_popP04 input {
+	background: #ffffff;
+}
+
+.Ik_popP04 .IpName {
+	position: absolute;
+	top: 185px;
+	left: 100px;
+	width: 405px;
+	height: 28px;
+	font-size: 12px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.Ik_popP04 .IpPhoneNum {
+	position: absolute;
+	top: 237px;
+	left: 100px;
+	width: 405px;
+	height: 28px;
+	font-size: 12px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.Ik_popP04 .IpEmail01 {
+	position: absolute;
+	top: 289px;
+	left: 100px;
+	width: 130px;
+	height: 28px;
+	font-size: 12px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.Ik_popP04 .IpEmail02 {
+	position: absolute;
+	top: 289px;
+	left: 282px;
+	width: 120px;
+	height: 28px;
+	font-size: 12px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.Ik_popP04 .IpEmail03 {
+	position: absolute;
+	top: 284px;
+	left: 419px;
+	width: 95px;
+	height: 38px;
+	font-size: 12px;
+	line-height: 38px;
+	border: 1px solid #cccccc;
+}
+
+.Ik_popP04 select {
+	vertical-align: middle;
+	line-height: 38px;
+	padding: 8px 0;
+}
+
+.Ik_popP04 .btn_chk1 {
+	position: absolute;
+	top: 341px;
+	left: 204px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.Ik_popP04 .btn_chk2 {
+	position: absolute;
+	top: 341px;
+	left: 295px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.m2policyBox {
+	position: absolute;
+	top: 403px;
+	left: 30px;
+	width: 471px;
+	height: 114px;
+	background: #fafafa;
+	padding: 10px 10px;
+	overflow: auto;
+}
+
+.m2policyBox p {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.m2policyBox table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 8px 0;
+	line-height: 18px;
+	color: #222222;
+}
+
+.m2policyBox table tr {
+	
+}
+
+.m2policyBox table tr th {
+	border: 1px solid #999999;
+	line-height: 22px;
+}
+
+.m2policyBox table tr td {
+	border: 1px solid #999999;
+	line-height: 18px;
+	padding: 5px 5px;
+}
+
+.Ik_popP04 .btn_plochk1 {
+	position: absolute;
+	top: 565px;
+	left: 319px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.Ik_popP04 .btn_plochk2 {
+	position: absolute;
+	top: 565px;
+	left: 400px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.Ik_popP04 .btn_plochk3 {
+	position: absolute;
+	top: 597px;
+	left: 319px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.Ik_popP04 .btn_plochk4 {
+	position: absolute;
+	top: 597px;
+	left: 400px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.Ik_popP04 .IKPcancle {
+	position: absolute;
+	top: 676px;
+	left: 121px;
+	width: 140px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.Ik_popP04 .IKPConfGo {
+	position: absolute;
+	top: 676px;
+	left: 271px;
+	width: 140px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.Ik_popP05 {
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	width: 1031px;
+	height: 594px;
+	margin-left: -515px;
+	margin-top: -25px;
+}
+
+.Ik_popP05 .p05photoBox {
+	position: absolute;
+	top: 54px;
+	left: 85px;
+	width: 540px;
+	height: 540px;
+}
+
+.Ik_popP05 .p05photoBox img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.Ik_popP05 .UserPhoto {
+	position: absolute;
+	top: 75px;
+	left: 644px;
+	width: 50px;
+	height: 50px;
+	background: #e6e6e6;
+	overflow: hidden;
+}
+
+.Ik_popP05 .UserPhoto .photoBg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+.Ik_popP05 .UserPhoto .photoBg img {
+	width: 100%;
+}
+
+.Ik_popP05 .UserPhoto .LayerCircle {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+.Ik_popP05 .Username {
+	position: absolute;
+	top: 90px;
+	left: 705px;
+	font-size: 15px;
+	color: #000000;
+	font-weight: 600;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.Ik_popP05 .IKPlikeBig {
+	position: absolute;
+	top: 89px;
+	right: 120px;
+	font-size: 14px;
+	color: #000000;
+	font-weight: 600;
+}
+
+.Ik_popP05 .PPhotoInfoTT {
+	position: absolute;
+	top: 140px;
+	left: 643px;
+	width: 285px;
+	height: auto;
+	background: #fff;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.Ik_popP05 .PPhotoInfoTT .TTbox {
+	width: 100%;
+	max-height: 180px;
+	overflow: auto;
+	line-height: 18px;
+	padding: 0 10px 0 0;
+	scrollbar-arrow-color: #d7d7d7;
+	scrollbar-face-color: #d7d7d7;
+	scrollbar-shadow-color: #d7d7d7;
+	scrollbar-track-color: #ffffff;
+}
+
+#ex31::-webkit-scrollbar {
+	width: auto;
+}
+
+#ex31::-webkit-scrollbar-button:start:decrement {
+	background-image: url(../../images/scroll_up.jpg);
+	display: block;
+}
+
+#ex31::-webkit-scrollbar-button:start:increment {
+	display: none;
+}
+
+#ex31::-webkit-scrollbar-button:end:decrement {
+	display: none;
+}
+
+#ex31::-webkit-scrollbar-button:end:increment {
+	background-image: url(../../images/scroll_down.jpg);
+	display: block;
+}
+
+#ex31::-webkit-scrollbar-button {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+#ex31::-webkit-scrollbar-track {
+	
+}
+
+#ex31::-webkit-scrollbar-thumb {
+	background: #b3b3b3;
+}
+
+#ex31::-webkit-scrollbar-corner {
+	
+}
+
+#ex31::-webkit-resizer {
+	
+}
+
+.ex32::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	border: 3px solid #fff;
+}
+
+.ex32::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment
+	{
+	display: block;
+	height: 0px;
+	background: #ffffff
+}
+
+.ex32::-webkit-scrollbar-track {
+	background: #efefef;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)*/
+}
+
+.ex32::-webkit-scrollbar-thumb {
+	height: 50px;
+	width: 50px;
+	background: rgba(0, 0, 0, .2);
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	/*-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1)*/
+}
+
+.Ik_popP05 .PPhotoInfoTT .TTdate {
+	width: 100%;
+	padding: 10px 0 0 0;
+	color: #666666;
+}
+
+.Ik_popP05 .PPhotoInfoTT .TTdate .Ctname {
+	color: #ff780b;
+	font-weight: 600;
+	padding: 0 0 0 6px;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.Ik_popP05 .PPhotoInfoTT .TTdate .CtTT {
+	color: #000000;
+	font-weight: 600;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.Ik_popP05 .photoMArea {
+	position: absolute;
+	top: 375px;
+	left: 646px;
+	width: 278px;
+	height: 110px;
+}
+
+.Ik_popP05 .photoMArea .photoMbox {
+	position: absolute;
+	width: 54px;
+	height: 54px;
+}
+
+.Ik_popP05 .photoMArea .photoMbox .ppto {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 54px;
+	height: 54px;
+	cursor: pointer;
+}
+
+.Ik_popP05 .photoMArea .photoMbox .ppto img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.Ik_popP05 .photoMArea .photoMbox .Sellayer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 54px;
+	height: 54px;
+	cursor: pointer;
+}
+
+.Ik_popP05 .photoMArea .ppto01 {
+	top: 0px;
+	left: 0px;
+}
+
+.Ik_popP05 .photoMArea .ppto02 {
+	top: 0px;
+	left: 56px;
+}
+
+.Ik_popP05 .photoMArea .ppto03 {
+	top: 0px;
+	left: 112px;
+}
+
+.Ik_popP05 .photoMArea .ppto04 {
+	top: 0px;
+	left: 168px;
+}
+
+.Ik_popP05 .photoMArea .ppto05 {
+	top: 0px;
+	left: 224px;
+}
+
+.Ik_popP05 .photoMArea .ppto06 {
+	top: 56px;
+	left: 0px;
+}
+
+.Ik_popP05 .photoMArea .ppto07 {
+	top: 56px;
+	left: 56px;
+}
+
+.Ik_popP05 .photoMArea .ppto08 {
+	top: 56px;
+	left: 112px;
+}
+
+.Ik_popP05 .photoMArea .ppto09 {
+	top: 56px;
+	left: 168px;
+}
+
+.Ik_popP05 .photoMArea .ppto10 {
+	top: 56px;
+	left: 224px;
+}
+
+.Ik_popP05 .RecomBt {
+	position: absolute;
+	top: 525px;
+	left: 646px;
+	width: 280px;
+	height: 49px;
+	cursor: pointer;
+}
+
+.Ik_popP05 .cardPre {
+	position: absolute;
+	top: 285px;
+	left: 0px;
+	width: 41px;
+	height: 79px;
+	cursor: pointer;
+}
+
+.Ik_popP05 .cardNext {
+	position: absolute;
+	top: 285px;
+	right: 0px;
+	width: 41px;
+	height: 79px;
+	cursor: pointer;
+}
+
+.uploadForm {
+	position: absolute;
+	top: 154px;
+	left: 91px;
+}
+
+/*타일이미지 좌표*/
+
+/*기본좌표*/
+.Sub01PArea .sb1ContArea {
+	position: absolute;
+	left: 50%;
+	width: 800px;
+	height: 670px;
+	margin-left: -550px;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1100px;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt01 {
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt02 {
+	position: absolute;
+	top: 377px;
+	left: 10px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt03 {
+	position: absolute;
+	top: 0px;
+	left: 285px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt04 {
+	position: absolute;
+	top: 277px;
+	left: 285px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt05 {
+	position: absolute;
+	top: 117px;
+	left: 560px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt06 {
+	position: absolute;
+	top: 393px;
+	left: 560px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt07 {
+	position: absolute;
+	top: 66px;
+	left: 835px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox1 .SContBt08 {
+	position: absolute;
+	top: 341px;
+	left: 835px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 {
+	position: absolute;
+	top: 0px;
+	left: 1100px;
+	width: 1100px;
+	height: 620px;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt01 {
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt02 {
+	position: absolute;
+	top: 377px;
+	left: 10px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt03 {
+	position: absolute;
+	top: 0px;
+	left: 285px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt04 {
+	position: absolute;
+	top: 277px;
+	left: 285px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt05 {
+	position: absolute;
+	top: 117px;
+	left: 560px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt06 {
+	position: absolute;
+	top: 393px;
+	left: 560px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt07 {
+	position: absolute;
+	top: 66px;
+	left: 835px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.Sub01PArea .sb1ContArea .CBox2 .SContBt08 {
+	position: absolute;
+	top: 341px;
+	left: 835px;
+	width: 255px;
+	height: 255px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.conbSmall {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.conbBig {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -210px;
+	margin-left: -210px;
+}
+
+/*추가페이지*/
+.SbNPage {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 960px;
+	overflow: hidden;
+	min-width: 1120px;
+}
+
+.SbNPage .backGSet {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.SbNPage .backGSet .BackGrImg02 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.SbNPage .headerN {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin: 250px auto 0;
+	max-width: 1120px;
+}
+
+.SbNPage .headerN .S3logo {
+	position: absolute;
+	top: 36px;
+	left: 40px;
+	cursor: pointer;
+}
+
+.SbNPage .headerN .BtLBt01 {
+	position: absolute;
+	top: 48px;
+	right: 297px;
+	cursor: pointer;
+}
+
+.SbNPage .headerN .BtLBt02 {
+	
+}
+
+.SbNPage .headerN .BtLBt03 {
+	position: absolute;
+	top: 40px;
+	right: 13px;
+	cursor: pointer;
+}
+
+.SbNPage .headerN .BtLBt04 {
+	position: absolute;
+	top: 40px;
+	right: 12px;
+	cursor: pointer;
+}
+
+.SbNPage .sbContentAreaNew {
+	position: relative;
+	width: 1120px;
+	height: auto;
+	margin: 0px auto 20px;
+	overflow: auto;
+}
+
+.SbNPage .sbContentAreaNew>ul>li {
+	float: left;
+	padding: 20px 5px 20px 11px;
+}
+
+.SConBoxFrom2 {
+	position: relative;
+	width: 264px;
+	height: 334px;
+}
+
+.SConBoxFrom2 .icon_best {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+
+.SConBoxFrom2 .photoimgbox {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 243px;
+	height: 243px;
+	overflow: hidden;
+	background: #d1d1d1;
+	cursor: pointer;
+}
+
+.SConBoxFrom2 .photoimgbox>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.SConBoxFrom2 .photoimgbox .LikeNm {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 9px;
+	background: url(../../images/photoBB.png);
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.SConBoxFrom2 .Bname {
+	position: absolute;
+	top: 268px;
+	left: 5px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #ffffff;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.SConBoxFrom2 .BLike {
+	position: absolute;
+	top: 268px;
+	right: 10px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.SConBoxFrom2 .BLike span {
+	padding: 0 6px 0 0;
+}
+
+.SConBoxFrom2 .InforTT {
+	position: absolute;
+	top: 291px;
+	left: 5px;
+	width: 95%;
+	height: 36px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 18px;
+	overflow: hidden;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+}
+
+.NextbtpN1 {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto 30px;
+}
+
+.NextbtpN1>img {
+	cursor: pointer;
+}
+
+.joinInfoBox {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 314px;
+	background: #fff;
+	min-width: 1120px;
+}
+
+.joinInfoBox .topbarN {
+	position: relative;
+	width: 100%;
+	height: 54px;
+	background: #ff8116;
+	text-align: center;
+}
+
+.joinInfoBox .topbarN img {
+	padding: 15px 0 0 0;
+	cursor: pointer;
+}
+
+.joinInfoBox .boxinfo {
+	position: relative;
+	width: 100%;
+	height: 260px;
+	background: #ffffff;
+	text-align: center;
+}
+
+.SbNPage .headerN .cateBt {
+	position: absolute;
+	top: 40px;
+	right: 147px;
+	cursor: pointer;
+	width: 124px;
+	height: 40px;
+	background: url(../../images/catebg.png) no-repeat;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+	font-size: 13px;
+	font-weight: 600;
+	color: #ffffff;
+	line-height: 40px;
+	padding: 0 0 0 0px;
+	padding: 0 0 0 10px;
+}
+
+.SbNPage .headerN .cateMenu {
+	position: absolute;
+	top: 80px;
+	right: 147px;
+	width: 134px;
+	height: auto;
+	background: #ffffff;
+	z-index: 1000;
+	max-height: 456px;
+	overflow: auto;
+}
+
+.SbNPage .headerN .cateMenu>ul>li {
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	font-family: Verdana, "Malgun Gothic", Dotum, sans-serif !important;
+	font-size: 13px;
+	font-weight: 600;
+	color: 000000;
+	cursor: pointer;
+}
+
+.SbNPage .headerN .cateMenu>ul>li:hover {
+	background: #dddddd;
+}
+
+.SbNPage .headerN .cateMenu>ul>li a {
+	color: 000000;
+	padding: 0 0 0 10px;
+}

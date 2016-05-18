@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.mapper">
+	<!-- member -->
+	<select id="login" parameterType="java.util.Map" resultType="int">
+		select count(*) from member where id = #{Username} and pwd = #{Password} 
+	</select>
+	<insert id="join" parameterType="java.util.Map">
+		insert into member(id, pwd, email, profile) values(#{Username}, #{Password}, #{Email}, #{profile}) 
+	</insert>
+	<update id="update" parameterType="java.util.Map">
+		update member set profile=#{profile}, email=#{Email}, pwd=#{Password} where id = #{Username} 
+	</update>
+	<delete id="delete" parameterType="java.util.Map">
+		delete from member where id = #{Username}
+	</delete>
+	<select id="mypageInfo" parameterType="java.util.Map" resultType="Member">
+		select * from member where id=#{Username}
+	</select>
+	<insert id="addfollow" parameterType="java.util.Map">
+		insert into follow(member_id, follow_id) values(#{Username}, #{FollowID})
+	</insert>
+	<select id="getfollowlist" parameterType="java.util.Map" resultType="Follow">
+		select follow_id, id from follow, member where member.id=follow.member_id and member.id=#{Username};
+	</select>
+	<select id="getfollowAllList" parameterType="String" resultType="Member">
+		select id, pwd, email, profile from member where id = #{FollowID} 
+	</select>
+	<delete id="deleteFollow" parameterType="java.util.Map">
+		delete from follow where member_id=#{Username} and follow_id=#{FollowID}
+	</delete>
+	<select id="checkLogin" parameterType="java.util.Map" resultType="int">
+		select count(*) from member where id=#{id} 
+	</select>
+	<insert id="insertFB" parameterType="java.util.Map">
+		insert into member(id, email, profile) values(#{id}, #{email}, #{profile}) 
+	</insert>
+	<insert id="insertKAKAO" parameterType="java.util.Map">
+		insert into member(id, profile) values(#{id}, #{profile}) 
+	</insert>
+	
+	<!-- Social -->
+	<insert id="insertSNS" parameterType="java.util.Map">
+		insert into sns (date, id, sns_like, theme) values (now(), #{id}, 0, #{theme})
+	</insert>
+	<insert id="pinsertSNS" parameterType="java.util.Map">
+		insert into photo (sns_no, path) values (#{sns_no}, #{path})
+	</insert>
+	<insert id="tinsertSNS" parameterType="java.util.Map">
+		insert into tag (sns_no, tag) values (#{sns_no}, #{tag})
+	</insert>
+	<insert id="xinsertSNS" parameterType="java.util.Map">
+		insert into text (sns_no, text) values (#{sns_no}, #{text})
+	</insert>
+	<select id="getMaxSnsNo" resultType="int">
+		select max(no) as no from sns
+	</select>
+	<select id="getAllDataSNS" resultType="SNS">
+		select no, date, id, sns_like from sns order by no desc  
+	</select>
+	<select id="getSNSSortLike" resultType="SNS">
+		select no, date, id, sns_like from sns order by sns_like desc;
+	</select>
+	<select id="getAllDataSNSTag" resultType="tag" parameterType="int">
+		select no, sns_no, tag from tag where sns_no = #{sns_no} 
+	</select> 
+	<select id="getAllDataSNSText" resultType="text" parameterType="int">
+		select no, sns_no, text from text where sns_no = #{sns_no} 
+	</select> 
+	<select id="getAllDataSNSPhoto" resultType="photo" parameterType="int">
+		select no, sns_no, path from photo where sns_no = #{sns_no} 
+	</select> 
+	<select id="getMemberSNS" resultType="Member" parameterType="String">
+		select id, pwd, email, profile from member where id=#{id} 
+	</select>
+
+	<select id="getSNSDetail" resultType="SNS" parameterType="int">
+		select no, date, id, sns_like from sns where no = #{no} 
+	</select>
+	<select id="getSNSDetailText" resultType="Text" parameterType="int">
+		select no, sns_no, text from text where sns_no = #{no} 
+	</select>
+	<select id="getSNSDetailTag" resultType="Tag" parameterType="int">
+		select no, sns_no, tag from tag where sns_no = #{no} 
+	</select>
+	<select id="getSNSDetailPhoto" resultType="Photo" parameterType="int">
+		select no, sns_no, path from photo where sns_no = #{no} 
+	</select>
+	<select id ="getSNSDetailMember" resultType="Member" parameterType="String">
+		select id, email, pwd, profile from member where id=#{id} 
+	</select>
+
+	<update id="addSNSlike" parameterType="int">
+		update sns set sns_like=sns_like+1 where no = #{no} 
+	</update>
+	
+	<update id="cancelSNSlike" parameterType="int">
+		update sns set sns_like=sns_like-1 where no = #{no} 
+	</update>
+	
+	<select id="getMemLike" parameterType="String" resultType="String">
+		select snslike from member where id = #{id} 
+	</select>
+	
+	<delete id="deleteSNS" parameterType="int">
+		delete from sns where no = #{no} 
+	</delete>
+	
+	<delete id="deleteCourse" parameterType="int">
+		delete from course where no = #{no} 
+	</delete>
+	<update id="updateMemLike" parameterType="String">
+		update member set snslike=#{like} where id=#{id} 
+	</update>
+	
+	<select id="getAllSNSReply" parameterType="int" resultType="Reply">
+		select no, sns_no, id, text, date from reply where sns_no = #{no} order by no desc;
+	</select>
+	
+	<insert id="snsReplyInsert" parameterType="java.util.Map" >
+		insert into reply(sns_no, id, text) values(#{no}, #{id}, #{text}) 
+	</insert>
+
+	<!-- course -->
+	<insert id="insertCourse" parameterType="java.util.Map">
+		insert into course(id, quoat, addr, date, courseDate, theme, cname, fixquoat) values(#{id}, #{quoat}, #{addr}, now(), #{cDate}, #{theme}, #{cname}, 0 ) 
+	</insert>
+	
+	<select id="getMaxCourseNo" resultType="int">
+		select max(no) as no from course 
+	</select>
+	
+	<insert id="xinsertCourse" parameterType="java.util.Map">
+		insert into text(course_no, text) values (#{course_no}, #{text}) 
+	</insert>
+	
+	<insert id="tinsertCourse" parameterType="java.util.Map">
+		insert into tag(course_no, tag) values (#{course_no}, #{tag}) 
+	</insert>
+	
+	<insert id="pinsertCourse" parameterType="java.util.Map">
+		insert into photo(course_no, path) values (#{course_no}, #{path}) 
+	</insert>
+	
+	<select id="getDataSNSbyTheme" parameterType="String" resultType="SNS">
+		select no, date, id, sns_like from sns where theme = #{theme} order by no desc 
+	</select>
+	
+	<select id="getDataCoursebyTheme" parameterType="String" resultType="Course">
+		select no, id, date, quoat, addr, courseDate, theme, cname, fixquoat from course where theme = #{theme} order by no desc 
+	</select>
+	
+	<select id="getAllDataCourseTag" resultType="tag" parameterType="int">
+		select no, course_no, tag from tag where course_no = #{course_no} 
+	</select> 
+	<select id="getAllDataCourseText" resultType="text" parameterType="int">
+		select no, course_no, text from text where course_no = #{course_no} 
+	</select> 
+	<select id="getAllDataCoursePhoto" resultType="photo" parameterType="int">
+		select no, course_no, path from photo where course_no = #{course_no} 
+	</select> 
+	<select id="getMemberCourse" resultType="Member" parameterType="String">
+		select id, pwd, email, profile from member where id=#{id} 
+	</select>
+	
+	<select id="getMyFollowlist" parameterType="String" resultType="Follow">
+		select member_id, follow_id from follow where member_id = #{id} 
+	</select>
+	
+	<select id="getMemberAllData" resultType="Member">
+		SELECT id, pwd, email, profile FROM member 
+	</select>
+	<select id="getMyCourse" parameterType="String" resultType="Course">
+		select no, id, quoat, addr, date, courseDate, theme, cname, fixquoat from course where id=#{id} 
+	</select>
+	<delete id="deleteByAdmin" parameterType="String">
+		delete from member where id=#{id} 
+	</delete>
+
+	<select id="detailCourse" parameterType="int" resultType="Course">
+		select no, id, quoat, addr, date, courseDate, theme, cname, fixquoat from course where no=#{no} 
+	</select>
+	
+	<insert id="courseReserve" parameterType="java.util.Map">
+		insert into booking(course_no, member_id, deposit) values(#{no}, #{id}, 0)
+	</insert>
+	
+	<select id="detailCourseText" parameterType="int" resultType="Text">
+		select no, course_no, text from text where course_no = #{no} 
+	</select>
+	
+	<select id="detailCourseTag" parameterType="int" resultType="Tag">
+		select no, course_no, tag from tag where course_no = #{no} 
+	</select>
+	
+	<select id="detailCoursePhoto" parameterType="int" resultType="Photo">
+		select no, course_no, path from photo where course_no = #{no} 
+	</select>
+	
+	<select id="detailCourseMember" parameterType="String" resultType="Member">
+		select id, pwd, email, profile, admin, snslike from member where id = #{id} 
+	</select>
+	
+	<select id="getReserveMyCourse" parameterType="String" resultType="Booking">
+		select * from booking where member_id = #{id} 
+	</select>
+	
+	<select id="getReserveCourseList" parameterType="int" resultType="Course">
+		select * from course where no = #{no} 
+	</select>
+	
+	<update id="setMemlike" parameterType="java.util.Map">
+		update member set snslike = #{snslike} where id = #{id} 
+	</update>
+	
+	<select id="adminFindMember" parameterType="java.util.Map" resultType="Member">
+		SELECT id, email, profile FROM member WHERE ${fs} LIKE CONCAT('%',#{ss},'%') 
+	</select>
+	
+	<select id="getMember" parameterType="String" resultType="Member">
+		select * from member where id=#{id} 
+	</select>
+	
+	<select id="getReserveMyC" parameterType="int" resultType="Course">
+		select * from course where no = #{no} 
+	</select>
+	
+	<select id="getReserveAdminCourse" resultType="Booking">
+		select * from booking where deposit = 0 
+	</select>
+	
+	<select id="CountTheme0" resultType="int">
+		SELECT COUNT(*) FROM sns WHERE theme='침실';
+	</select>
+	
+	<select id="CountTheme1" resultType="int">
+		SELECT COUNT(*) FROM sns WHERE theme='거실';
+	</select>
+	
+	<select id="CountTheme2" resultType="int">
+		SELECT COUNT(*) FROM sns WHERE theme='주방';
+	</select>
+	
+	<select id="CountTheme3" resultType="int">
+		SELECT COUNT(*) FROM sns WHERE theme='욕실';
+	</select>
+	
+	<select id="CountSnsLike" resultType="SNS">
+		SELECT no, id, sns_like FROM sns ORDER BY sns_like DESC LIMIT 5 
+	</select>
+	<select id="getCourseDetail" resultType="Course" parameterType="int">
+		select * from course where no = #{no} 
+	</select>
+	<select id="getCourseDetailText" resultType="Text" parameterType="int">
+		select no, course_no, text from text where course_no = #{no} 
+	</select>
+	<select id="getCourseDetailTag" resultType="Tag" parameterType="int">
+		select no, course_no, tag from tag where course_no = #{no} 
+	</select>
+	<select id="getCourseDetailPhoto" resultType="Photo" parameterType="int">
+		select no, course_no, path from photo where course_no = #{no} 
+	</select>
+	<select id ="getCourseDetailMember" resultType="Member" parameterType="String">
+		select id, email, pwd, profile from member where id=#{id} 
+	</select>
+	<select id="getAllCourseReply" resultType="Reply" parameterType="int">
+		select * from reply where course_no = #{no} order by no desc 
+	</select>
+	<insert id="courseReplyInsert" parameterType="java.util.Map">
+		insert into reply(course_no, id, text, date) values(#{no},#{id}, #{text}, now()) 
+	</insert> 
+	<select id="getSoicalStar" resultType="SNS">
+		select distinct * from sns order by sns_like desc limit 6
+	</select>
+	<select id="getCourseStar" resultType="Course">
+		select * from course order by no desc limit 4 
+	</select>
+	
+	<select id="indexmember" resultType="String">
+		select count(*) from member 
+	</select>
+	
+	<select id="indexlike" resultType="String">
+		select max(sns_like) from sns 
+	</select>
+	
+	<update id="checkDeposit" parameterType="java.util.Map">
+		update booking set deposit=1 where member_id=#{id}
+	</update>
+	
+	<update id="updateFixquoat" parameterType="java.util.Map">
+		update course set fixquoat=fixquoat+1 where no=#{no}
+	</update>
+</mapper>
+

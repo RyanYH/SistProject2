@@ -1,0 +1,147 @@
+﻿MySQL 5.7 Command Line Client
+
+show databases;
+
+-- 데이터베이스 생성
+create database project;
+
+-- 데이터베이스 선택
+use project;
+
+-- 테이블 생성
+create table member(
+	id varchar(20) primary key,
+	pwd varchar(20),
+	email varchar(50),
+	profile varchar(1000),
+	admin integer(1),
+	snslike varchar(1000)
+);
+
+create table course(
+	no integer(10) auto_increment primary key,
+	id varchar(20) not null,
+	quoat integer(3),
+	addr varchar(200),
+	date timestamp not null,
+	courseDate date,
+	theme varchar(200),
+	cname varchar(200)
+);
+
+create table sns(
+	no integer(10) auto_increment primary key,
+	date timestamp not null,
+	id varchar(20) not null,
+	sns_like integer(10),
+	theme varchar(200)
+);
+
+create table follow(
+	no integer(10) auto_increment primary key, 
+	member_id varchar(20), 
+	follow_id varchar(20), 
+	constraint fk_fmid 
+	foreign key(member_id) references member(id) 
+	on delete cascade 
+	on update cascade
+);
+
+create table booking(
+	no integer(10) auto_increment primary key, 
+	course_no integer(10), 
+	member_id varchar(20), 
+	deposit bool, 
+	constraint fk_bcno 
+	foreign key(course_no) references course(no) 
+	on delete cascade 
+	on update cascade, 
+	constraint fk_bmid 
+	foreign key(member_id) references member(id) 
+	on delete cascade 
+	on update cascade
+);
+
+create table roomstar(
+	no integer(10) auto_increment primary key, 
+	sns_no integer(10), 
+	course_no integer(10), 
+	date timestamp, 
+	constraint fk_rsno 
+	foreign key(sns_no) references sns(no) 
+	on delete cascade 
+	on update cascade, 
+	constraint fk_rcno 
+	foreign key(course_no) references course(no) 
+	on delete cascade 
+	on update cascade
+);
+
+create table reply(
+	no integer(10) auto_increment primary key,
+	sns_no integer(10), 
+	course_no integer(10), 
+	date timestamp, 
+	id varchar(20), 
+	text varchar(1000), 
+	constraint fk_resno 
+	foreign key(sns_no) references sns(no) 
+	on delete cascade 
+	on update cascade, 
+	constraint fk_recno 
+	foreign key(course_no) references course(no) 
+	on delete cascade 
+	on update cascade
+);
+
+create table tag(
+	no integer(10) auto_increment primary key, 
+	sns_no integer(10), 
+	course_no integer(10), 
+	tag varchar(1000), 
+	constraint fk_tsno 
+	foreign key(sns_no) references sns(no) 
+	on delete cascade 
+	on update cascade, 
+	constraint fk_tcno 
+	foreign key(course_no) references course(no) 
+	on delete cascade 
+	on update cascade
+);
+
+create table photo(
+	no integer(10) auto_increment primary key, 
+	sns_no integer(10), 
+	course_no integer(10), 
+	path varchar(1000), 
+	constraint fk_psno 
+	foreign key(sns_no) references sns(no) 
+	on delete cascade 
+	on update cascade, 
+	constraint fk_pcno 
+	foreign key(course_no) references course(no) 
+	on delete cascade 
+	on update cascade
+);
+
+create table text(
+	no integer(10) auto_increment primary key, 
+	sns_no integer(10), 
+	course_no integer(10), 
+	text varchar(1000), 
+	constraint fk_tesno 
+	foreign key(sns_no) references sns(no) 
+	on delete cascade 
+	on update cascade, 
+	constraint fk_tecno 
+	foreign key(course_no) references course(no) 
+	on delete cascade 
+	on update cascade
+);
+
+
+-- 권한 부여
+grant all privileges on project.* to root@'%' identified by '1234' with grant option;
+select host, user, select_priv, insert_priv, update_priv, delete_priv from user;
+update user set select_priv='Y' insert_priv='Y' update_priv='Y' delete_priv='Y' where host='%';
+
